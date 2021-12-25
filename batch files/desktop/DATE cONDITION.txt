@@ -1,0 +1,260 @@
+onLY START DATE 
+oNLY eND DATE
+Hide 
+jQuery(selector).toggleOption(true); // show option
+jQuery(selector).toggleOption(false); // hide option
+
+==================================================
+make on click "select" to hide option : display none; [https://github.com/sonata-project/SonataAdminBundle/issues/3808]
+--------------------------------------------------
+$("#{{ admin.uniqId }}_list1").on('change', function(){
+     var options = ... //call ajax
+     $("#{{ admin.uniqId }}_list2").empty();
+      $.each(options, function(key, value) {
+        $("#{{ admin.uniqId }}_list2").append("<option value='"+this.id+"'>"+this.label+"</option>");
+      });
+  });
+
+==================================================
+Regex
+--------------------------------------------------
+([0-2][0-9]|(3)[0-1])(\D){1}([0-1][0-9])(\D){1}((\d){4}|(\d){2})
+----------
+/([0-2][0-9]|(3)[0-1])(\D){1}([0-1][0-9])(\D){1}((\d){4}|(\d){2})/g
+
+
+
+
+==================================================
+Raw Data to test
+--------------------------------------------------
+RegExr was created by gskinner.com, and is proudly hosted by Media Temple.
+
+Edit the Expression & Text to see matches. Roll over matches or the expression for details. PCRE & Javascript flavors of RegEx are supported.
+
+The side bar includes a Cheatsheet, full Reference, and Help. You can also Save & Share with the Community, and view patterns you create or favorite in My Patterns.
+
+Explore results with the Tools below. Replace & List output custom results. Details lists capture groups. Explain describes your expression in plain English.
+31/12/2019
+31.12.2019
+31-12-2019
+31:12:2019
+Friday, January 25, 2019
+February 8, 2019
+17 Jan - 18 Jan 2019
+Dec. 12 - 14, 2018
+Feb 4, 2019 - Feb 5, 2019
+December 13-14, 2018
+December 13 - 14, 2018
+15-17 Febuary'19
+September 28th & 29th
+14 – 25 December 2018
+12.01.2019-13.01.2019
+Jan 03, 2019, 9:00 AM – Jan 04, 2019, 6:00 PM
+January 4-5, 2019
+Sat Dec 15th - Sun 16th
+January 3-5, 2019
+Saturday, January 5th, 2019
+Saturday, December 8, 2018
+January 8th, 9th & 10th, 2019
+January 8, 2019 - 11:00 am - January 9, 2019 - 4:30 pm
+January 8, 2019 - January 9, 2019
+Feb 02, 2017 To Mar 31, 2019
+Friday February 22, 2019
+6 - 8 November 2019
+28 FEB - 2 MARCH 2019
+28 Feb - 01 Mar 2019
+March 25 & 26, 2019
+November 30-Dec. 2, 2018
+6 - 8 March 2019
+Tuesday, March 12, 2019 – Wednesday, March 13, 2019
+5, 6 and 7 March 2019
+May 9th-11th, 2019
+5–6 November 2019
+2019. 7.24 WED 7.26 FRI
+SATURDAY 2/03/2019
+Thursday, May 9 and Friday, May 10, 2019
+Wednesday, February 6, 2019 to Saturday, February 9, 2019
+Tuesday 19th and Wednesday 20th March 2019
+2019: September 24-26
+6. - 8. December 2018
+Tuesday, December 4, 2018
+3 DEC – 15 DEC 2018
+03. – 04. December 2018
+APRIL 24, 2019 - APRIL 28, 2019
+30th of May to 1st of June 2019
+28/05/2019 - 02/06/2019
+June 24 – 27, 2019
+16th to 18th of February 2019
+29TH-31TH.MARCH. 2019
+2019. 3.29 - 31
+Mar. 29th-31st, 2019
+14/05/2019
+11 September 2019 - 12 September 2019
+May 9 to 11, 2019
+May 9th to May 11th 2019
+23 June to 28 June, 2019
+July 20-21, 2019
+13th-15th May 2019
+April 3, 2019 8:00 am - April 4, 2019 5:00 pm
+Wednesday, Apr 10 2019 at 8:00am - Thursday, Apr 11 2019 at 8:00pm
+Tuesday, November 5, 2019 9:00 AM
+Wednesday, November 6, 2019 5:00 PM
+Tuesday, August 6 – Friday, August 9, 2019
+Start: March 02 2019, 8:00 am
+End: March 02 2019, 3:30 pm
+30. - 31. January 2019
+2019.10.10-12
+
+
+// Data to test
+
+Sunday, May 24, 2020
+May 24, 2020
+24 May - 25 May 2020
+May. 24 - 25, 2020
+May 24, 2020 - May 25, 2020
+May 24-25, 2020
+May 24 - 25, 2020
+24-25 May'20
+May 24th & 25th
+24 – 25 May 2020
+24.05.2020-25.05.2020
+May 24-25, 2020
+Sun May 24th - Mon May 25th
+Sunday, May 24th, 2020
+Sunday, May 24, 2020
+May 24th & 25th, 2020
+May 24, 2020 - May 25, 2020
+May 24, 2020 To May 25, 2020
+Sunday May 24, 2020
+24 - 25 May 2020
+24 May - 25 May 2020
+24 May - 25 May 2020
+May 24 & 25, 2020
+May 24-May. 25, 2020
+24 - 25 May 2020
+Sunday, May 24, 2020 – Monday, May 25, 2020
+May 24 and 25, 2020
+May 24th-25th, 2020
+24-25 May 2020
+2020. 5.24 Sun 5.25 Mon
+Sunday 24/05/2020
+Sunday, May 24 and Monday, May 25, 2020
+Sunday, May 24, 2020 to Monday, May 25, 2020
+Sunday 24th and Monday 25th May 2020
+2020: May 24-25
+24. - 25. May 2020
+Sunday, May 24, 2020
+24 May – 25 May 2020
+24. – 25. May 2020
+May.24, 2020 - May.25, 2020
+24th of May to 25th of May 2020
+24/05/2020 - 25/05/2020
+May 24 – 25, 2020
+24th to 25th of May 2020
+24th-25th.May. 2020
+2020. 5.24 - 25
+May. 24th-25th, 2020
+24/05/2020
+24 May 2020 - 25 May 2020
+May 24 to 25, 2020
+May 24th to May 25th 2020
+24 May to 25 May, 2020
+May 24-25, 2020
+24th-25th May 2020
+Sunday, May 24 – Monday,May 25, 2020
+Start: May 24 2020
+End: May 25 2020
+24. - 25. May 2020
+2020.05.24-25
+2020.5.24 Sun 5.25 Mon
+2020.5.24 - 25
+May 24th-25th, 2020
+Sunday, May 24
+May 24
+24 May - 25 May
+May. 24 - 25
+May 24 - May 25
+May 24-25
+May 24 - 25
+24-25 May
+May 24th & 25th
+24 – 25 May
+24.05-25.05
+May 24-25
+Sun May 24th - Mon May 25th
+Sunday, May 24th
+Sunday, May 24
+May 24th & 25th
+May 24 - May 25
+May 24 To May 25
+Sunday May 24
+24 - 25 May
+24 May - 25 May
+24 May - 25 May
+May 24 & 25
+May 24-May. 25
+24 - 25 May
+Sunday, May 24 – Monday, May 25
+May 24 and 25
+May 24th-25th
+24-25 May
+5.24 Sun 5.25 Mon
+Sunday 24/05
+Sunday, May 24 and Monday, May 25
+Sunday, May 24 to Monday, May 25
+Sunday 24th and Monday 25th May
+May 24-25
+24. - 25. May
+Sunday, May 24
+24 May – 25 May
+24. – 25. May
+May.24 - May.25
+24th of May to 25th of May
+24/05 - 25/05
+May 24 – 25
+24th to 25th of May
+24th-25th.May
+5.24 - 25
+May. 24th-25th
+24/05
+24 May - 25 May
+May 24 to 25
+May 24th to May 25th
+24 May to 25 May
+May 24-25
+24th-25th May
+Sunday, May 24 – Monday,May 25
+Start: May 24
+End: May 25
+24. - 25. May
+05.24-25
+5.24 Sun 5.25 Mon
+5.24 - 25
+May 24th-25th
+24th - 25th May, 2020
+5/24/2020
+24th May
+24th May 2020
+May 24/25
+May. 24
+May 24
+24.05.2020 - 25.05.2020
+24. May 2020
+May 24th, 2020
+24. 05 - 25. 05. 2020
+Sunday 24th May
+24.05 -25.05.2020
+May 24, 2020
+May 24th & May 25th
+Sunday 24th May 2020
+May, 24th, 2020
+May 24th 2020
+Sunday 24th May
+24th May 2020
+24th May / 25th May 20
+May 24, 2020
+24th - 25th May, 2020
+156A
+

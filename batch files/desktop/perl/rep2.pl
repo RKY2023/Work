@@ -1,0 +1,1 @@
+#!/usr/bin/perl -n # rep2.pl - Reports a date in format mon-dd-yyyy using a TRE # @month[1..12] = qw/Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec/ ; split (/:/) ; # Splits on @_ array $_[4] =~ /(\d+).(\d+).(\d+)/ ; # Splits up into $1, $2, and $3 $_[4] = join (“-”, $2, $month[$1], “19$3”) ; $_ = join(“:”, @_); print ;

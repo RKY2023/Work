@@ -1,0 +1,7 @@
+ Get-Content "d:\``[s``]tt - Copy.mkv.torrent" #get content of file "[s]tt - copy.mkv.torrent"
+
+ Get-ItemProperty ttt | Format-list -Property *  -Force
+
+shcm #https://devblogs.microsoft.com/scripting/table-of-basic-powershell-commands/
+
+ogv

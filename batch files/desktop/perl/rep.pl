@@ -1,0 +1,1 @@
+#!/usr/bin/perl -n # Script: rep2.pl - Converts name to uppercase and prefixes century to date # @line = split (/:/) ; # $_ is assumed ($month, $day, $year) = split(/\//, $line[4]); # Splits date field $year = “19” . $year ; # Adds century prefix $line[4] = join(“/”, $month, $day, $year); # Rebuilds date field $line = join(“:”, @line); # Rebuilds line print $line;

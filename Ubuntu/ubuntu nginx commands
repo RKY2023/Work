@@ -1,0 +1,11 @@
+systemctl status nginx
+systemctl stop nginx
+systemctl enable nginx
+nginx -h 
+
+
+
+nproc
+lscpu
+
+ulimit -n

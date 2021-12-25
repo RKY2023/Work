@@ -1,0 +1,39 @@
+gnome-calculator              gnome-screenshot
+gnome-characters              gnome-session
+gnome-control-center          gnome-session-custom-session
+gnome-disk-image-mounter      gnome-session-inhibit
+gnome-disks                   gnome-session-properties
+gnome-documents               gnome-session-quit
+gnome-extensions              gnome-shell
+gnome-font-viewer             gnome-shell-extension-tool
+gnome-help                    gnome-shell-perf-tool
+gnome-keyring                 gnome-system-monitor
+gnome-keyring-3               gnome-terminal
+gnome-keyring-daemon          gnome-terminal.real
+gnome-language-selector       gnome-terminal.wrapper
+gnome-logs                    gnome-text-editor
+gnome-menus-blacklist         gnome-thumbnail-font
+gnome-power-statistics        gnome-www-browser
+
+
+
+watch grep -e Dirty: -e Writeback: /proc/meminfo
+sudo sync
+
+
+
+iwconfig
+ifconfig
+sudo apt install net-tools
+
+## shell part -start
+# link https://www.linuxbabe.com/ubuntu/connect-to-wi-fi-from-terminal-on-ubuntu-18-04-19-04-with-wpa-supplicant
+$wifi_port_name = ifconfig | grep "wlp" | awk '{print $1}' | awk '{sub(/:/,"")}1'
+# $wifi_port_name = wlp3s0
+sudo ifconfig wlp3s0 up
+sudo iwlist wlp3s0 scan | grep ESSID
+
+## shell part -end
+
+
+snap connections bluez

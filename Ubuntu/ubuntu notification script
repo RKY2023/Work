@@ -1,0 +1,7 @@
+notify-send 'DONE'
+
+
+#!/bin/bash
+$1 && \
+notify-send -u critical -i info 'Command execution finished' "The command '$1' terminated successfully" || \
+notify-send -u critical 'Command execution failed' "The command '$1' exited with errors"
